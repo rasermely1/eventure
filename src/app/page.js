@@ -8,7 +8,7 @@ export default function Home() {
       className="
         grid grid-rows-12 h-screen w-screen 
         bg-cover bg-center 
-        sm:bg-[url('/food-truck.jpg')] 
+        sm:bg-[url('/home-bg.jpg')] 
         bg-[url('/mobile-food-truck.jpg')]
       "
     >

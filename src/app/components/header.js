@@ -7,21 +7,29 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="row-span-1 flex items-center justify-between px-4 sm:px-6 text-white relative">
+    <header className="row-span-1 flex items-center justify-between px-4 pt-4 sm:px-6 text-[#a8d2e3] bg-black/50 backdrop-blur-md relative">
       <nav className="container mx-auto flex justify-between items-center py-4">
-        <div className="text-2xl font-sans font-bold">
-          <Link href="/">Eventure</Link>
+        <div className="text-2xl font-sans">
+          <Link href="/" className="flex items-center gap-2">
+            <svg width="35px" height="35px" viewBox="0 0 512 512" id="icons" xmlns="http://www.w3.org/2000/svg">
+              <path d="M414.11,153.82C429.66,264.4,345.85,357.09,282.54,366s-169.48-57.5-185-167.68a159.82,159.82,0,1,1,316.53-44.49Z" fill="none" stroke="#a8d2e3" strokeMiterlimit="10" strokeWidth="13"/>
+              <path d="M236.06,308.05c-32.83-13-67.08-43.1-82.27-85.46" fill="none" stroke="#a8d2e3" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="13"/>
+              <path d="M367.7,495.78c-32.83-13-63.31-40.06-78.5-82.41" fill="none" stroke="#a8d2e3" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="13"/>
+              <polygon points="266.71 368.21 257.54 417.82 320.85 408.92 298.36 363.76 266.71 368.21" fill="none" stroke="#a8d2e3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="13"/>
+            </svg>
+            eventure
+          </Link>
         </div>
 
         <ul className="hidden font-serif sm:flex space-x-6 text-lg">
           <li>
-            <Link href="/create-event" className="hover:text-gray-300">
+            <Link href="/event-details" className="hover:text-gray-300">
                 • Events
             </Link>
           </li>
           <li>
-            <Link href="/vendors" className="hover:text-gray-300">
-                • Vendors
+            <Link href="/eventPacks" className="hover:text-gray-300">
+                • Event Packs
             </Link>
           </li>
           <li>
