@@ -24,7 +24,7 @@ export default function Home() {
         <div className="flex justify-center row-span-1 font-serif text-white text-xl">Everything You Need For Every Event</div>
 
         <div className="flex row-span-2 justify-center">
-          <Link href="/create-event" className="grid grid-rows-2 bg-white opacity-90 px-12 py-3 font-serif text-lg rounded-md">
+          <Link href="/event-details" className="grid grid-rows-2 bg-white opacity-90 px-12 py-3 font-serif text-lg rounded-md">
             <div className="row-span-1">Plan Your</div>
             <div className="row-span-1 text-center">Event</div>
           </Link>

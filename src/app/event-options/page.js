@@ -4,10 +4,11 @@ import React, { useState, useEffect } from "react";
 import '../globals.css';
 import Header from '../components/header';
 import { useRouter } from 'next/navigation';
+import eventData from '.../event-details';
 
 const EventOptionsPage = () => {
   const router = useRouter();
-
+  
   const backgrounds = [
     "/birthday-party.jpg",
     "/church-party.jpg",
