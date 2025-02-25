@@ -63,10 +63,10 @@ const EventDetailsPage = () => {
   };
 
   return (
-    <div className="font-sans container-fluid h-screen w-screen transition-all duration-1000 bg-cover bg-center" style={{ backgroundImage: `url(${backgrounds[bgIndex]})` }}>
+    <div className="font-sans grid h-full min-h-screen w-full transition-all duration-1000 bg-cover bg-center" style={{ backgroundImage: `url(${backgrounds[bgIndex]})` }}>
       <Header />
-      <div className="h-full w-full flex flex-col items-center justify-center">
-        <div className="relative bg-[#d9d3cf] text-black p-6 rounded-lg shadow-lg w-[80%] sm:w-[35%]">
+      <div className="flex flex-col items-center justify-center">
+        <div className="relative bg-[#d9d3cf] text-black p-6 rounded-lg shadow-lg w-[100%] w-[100%] lg:w-[35%] h-[100%] lg:h-[95%]">
           <form onSubmit={handleSubmit} className="bg-transparent py-6 px-12 lg:px-0 mx-0 rounded-md">
             <div className="text-center text-3xl mb-6">Event Details</div>
 

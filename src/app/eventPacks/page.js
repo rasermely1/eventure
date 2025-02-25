@@ -8,7 +8,7 @@ const EventPacksPage = () => {
       id: 1,
       name: 'Taco50',
       image: '/taco-paradise.jpg',
-      reviews: 'Tacos for 50 from a restaurant or food truck of your choosing, tables(5) chairs(50)',
+      reviews: 'Tacos for 50 people from a restaurant or food truck of your choosing, tables(5) chairs(50)',
       description: 'Email us and ask for store and food truck options pack, use the subject line Taco50. Please include a time and place for your event!',
       website: 'Email us at EventureEventPlanning@gmail.com',
     },
@@ -16,7 +16,7 @@ const EventPacksPage = () => {
       id: 2,
       name: 'BBQ80',
       image: '/bbq-bonanza.jpg',
-      reviews: 'BBQ for 80 from a restaurant or food truck of your choosing, tables(8) chairs(80)',
+      reviews: 'BBQ for 80 people from a restaurant or food truck of your choosing, tables(8) chairs(80)',
       description: 'Email us and ask for store and food truck options pack, use the subject line BBQ80. Please include a time and place for your event!',
       website: 'Email us at EventureEventPlanning@gmail.com',
     },
@@ -24,14 +24,14 @@ const EventPacksPage = () => {
       id: 3,
       name: 'SweetTreats20',
       image: '/sweet-treats.jpg',
-      reviews: 'Dessert for 20 from a restaurant or food truck of your choosing, tables(2) chairs(20)',
+      reviews: 'Dessert for 20 people from a restaurant or food truck of your choosing, tables(2) chairs(20)',
       description: 'Email us and ask for store and food truck options pack, use the subject line SweetTreats20. Please include a time and place for your event!',
       website: 'Email us at EventureEventPlanning@gmail.com',
     },
   ];
 
   return (
-    <div className="grid grid-rows-12 bg-black h-full min-h-screen">
+    <div className="grid grid-rows-12 bg-[#5e8db8] bg-center bg-cover h-full min-h-screen">
       <Header />
       <div className="text-white px-6 py-4 row-span-11">
         <h1 className="text-4xl font-serif text-center mb-10">Event Packs</h1>
@@ -39,7 +39,7 @@ const EventPacksPage = () => {
           {eventPacks.map((eventPack) => (
             <div
               key={eventPack.id}
-              className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+              className="bg-[#a8d2e3] border-4 border-black rounded-lg shadow-lg overflow-hidden"
             >
               <img
                 src={eventPack.image}
@@ -47,9 +47,9 @@ const EventPacksPage = () => {
                 className="w-full h-40 object-cover"
               />
               <div className="p-6">
-                <h2 className="text-2xl font-bold text-white">{eventPack.name}</h2>
-                <p className="text-yellow-400 mt-2">{eventPack.reviews}</p>
-                <p className="text-gray-300 mt-4">{eventPack.description}</p>
+                <h2 className="text-2xl font-bold text-black">{eventPack.name}</h2>
+                <p className="text-black mt-2">{eventPack.reviews}</p>
+                <p className="text-black mt-4">{eventPack.description}</p>
                 <a
                   href="https://gmail.com"
                   className="inline-block mt-4 text-blue-400 hover:underline"

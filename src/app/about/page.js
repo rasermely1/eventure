@@ -4,14 +4,14 @@ import Header from '../components/header';
 
 const AboutPage = () => {
   return (
-    <div className="grid grid-rows-12 bg-black h-screen">
+    <div className="grid grid-rows-12 bg-[#5e8db8] h-full min-h-screen">
       <Header />
       <div className="text-white font-serif px-10 py-6 row-span-11">
         <h1 className="text-4xl font-serif text-center mb-10">Meet The Team</h1>
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="border border-white rounded-md overflow-hidden">
             <img
-              src="/fall.jpg"
+              src="/event-invitations.jpg"
               alt="Team at Pitch Night"
               className="w-full h-full object-cover"
             />

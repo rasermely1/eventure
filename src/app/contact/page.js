@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const ContactPage = () => {
   return (
-    <div className="grid grid-rows-12 bg-black h-screen">
+    <div className="grid grid-rows-12 bg-[#5e8db8] h-screen">
       <Header />
       <div className="text-white font-serif px-10 py-6 row-span-11">
         <h1 className="text-4xl font-serif text-center mb-10">Contact Us</h1>

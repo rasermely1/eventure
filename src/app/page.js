@@ -8,8 +8,8 @@ export default function Home() {
       className="
         grid grid-rows-12 h-screen w-screen 
         bg-cover bg-center 
-        sm:bg-[url('/home-bg.jpg')] 
-        bg-[url('/mobile-food-truck.jpg')]
+        md:bg-[url('/cheers-image.jpg')] 
+        bg-[url('/event-invitations.jpg')]
       "
     >
       <div className="absolute inset-0 bg-gray-900 bg-opacity-50 -z-10 rounded-md"></div>
