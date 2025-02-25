@@ -9,11 +9,11 @@ const AboutPage = () => {
       <div className="text-white font-serif px-10 py-6 row-span-11">
         <h1 className="text-4xl font-serif text-center mb-10">Meet The Team</h1>
         <div className="grid lg:grid-cols-2 gap-8">
-          <div className="border border-white rounded-md overflow-hidden">
+          <div className="rounded-md overflow-hidden">
             <img
               src="/event-invitations.jpg"
               alt="Team at Pitch Night"
-              className="w-full h-full object-cover"
+              className="md:h-[80%] md:w-[60%] object-cover"
             />
           </div>
 
