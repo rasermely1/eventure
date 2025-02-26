@@ -76,15 +76,6 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="/pricing"
-                className="hover:text-gray-300"
-                onClick={() => setMenuOpen(false)}
-              >
-                Pricing
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/about"
                 className="hover:text-gray-300"
                 onClick={() => setMenuOpen(false)}

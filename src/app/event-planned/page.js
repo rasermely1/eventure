@@ -26,8 +26,8 @@ const EventPlannedPage = () => {
                         ${isVisible ? "translate-y-[-25%] opacity-100" : "translate-y-full opacity-0"}`}
                     >
                         <div className="text-2xl font-bold tracking-wide text-gray-800">Event Planned!</div>
-                        <div className="text-gray-700">Contact us: (777)777-7777</div>
-                        <div className="text-gray-700">Email: jsmith123@gmail.com</div>
+                        <div className="text-gray-700">Contact us: (630) 965-0026</div>
+                        <div className="text-gray-700">Email: EventureEventPlanning@gmail.com</div>
                     </div>
 
                     <div className="absolute bottom-0 w-full h-[50%] bg-[#e8e3db] rounded-b-lg shadow-lg z-20"></div>
