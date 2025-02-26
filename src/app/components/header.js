@@ -7,7 +7,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="gird h-20 items-center justify-between px-4 pt-4 sm:px-6 text-[#a8d2e3] bg-black/50 backdrop-blur-md">
+    <header className="gird h-20 items-center justify-between px-4 pt-4 sm:px-6 text-[#a8d2e3] bg-black/50 backdrop-blur-md z-10">
       <nav className="container mx-auto flex justify-between items-center py-4">
         <div className="text-2xl font-sans">
           <Link href="/" className="flex items-center gap-2">
@@ -54,11 +54,11 @@ export default function Header() {
       </nav>
 
       {menuOpen && (
-        <div className="flex w-full sm:hidden font-serif justify-center borderpy-4 bg-black opacity-80 absolute top-full left-0 z-50">
+        <div className="flex w-full sm:hidden font-serif justify-center borderpy-4 bg-black opacity-80 absolute top-full left-0">
           <ul className="flex flex-col space-y-4 text-center text-lg">
             <li>
               <Link
-                href="/events"
+                href="/event-details"
                 className="hover:text-gray-300"
                 onClick={() => setMenuOpen(false)}
               >
@@ -67,11 +67,11 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="/vendors"
+                href="/eventPacks"
                 className="hover:text-gray-300"
                 onClick={() => setMenuOpen(false)}
               >
-                Vendors
+                Event Packs
               </Link>
             </li>
             <li>
