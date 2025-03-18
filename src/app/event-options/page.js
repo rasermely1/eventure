@@ -66,10 +66,10 @@ const EventOptionsPage = () => {
   };
 
   return (
-    <div className="font-sans grid container-fluid h-full min-h-screen w-full transition-all duration-1000 bg-cover bg-center z-0" style={{ backgroundImage: `url(${backgrounds[bgIndex]})` }}>
+    <div className="font-sans grid grid-rows-6 container-fluid h-full min-h-screen w-full transition-all duration-1000 bg-cover bg-center z-0" style={{ backgroundImage: `url(${backgrounds[bgIndex]})` }}>
       <Header />
-      <div className="flex flex-col items-center justify-center">
-        <div className="relative bg-[#d9d3cf] text-black p-6 rounded-lg shadow-lg w-[100%] lg:w-[35%] h-[100%] lg:h-[90%]">
+      <div className="flex row-span-5 flex-col items-center justify-center">
+        <div className="relative sm:bg-gray-200 bg-purple-300 text-black p-6 rounded-lg shadow-lg w-[100%] lg:w-[35%] h-[100%] lg:h-[90%]">
           <form onSubmit={handleSubmit} className="bg-transparent py-6 px-12 lg:px-0 mx-0 rounded-md">
             <div className="text-center text-3xl mb-6">Event Options</div>
 

@@ -71,6 +71,7 @@ const ContactPage = () => {
                     Matthew Rancour
                   </Link>
                 </p>
+                <p className="text-sm">+1 (630) 379-8996</p>
               </li>
             </ul>
           </div>
