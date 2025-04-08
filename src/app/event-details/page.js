@@ -63,16 +63,16 @@ const EventDetailsPage = () => {
   };
 
   return (
-    <div className="font-sans grid grid-rows-6 h-full min-h-screen w-full transition-all duration-1000 bg-cover bg-center z-0" style={{ backgroundImage: `url(${backgrounds[bgIndex]})` }}>
+    <div className="font-sans grid h-full min-h-screen w-full transition-all duration-1000 bg-cover bg-center z-0" style={{ backgroundImage: `url(${backgrounds[bgIndex]})` }}>
       <Header />
-      <div className="flex flex-col row-span-5 items-center justify-center">
-        <div className="relative sm:bg-gray-200 bg-purple-300 text-black p-6 rounded-lg shadow-lg w-[100%] lg:w-[35%] h-[100%] lg:h-[95%]">
+      <div className="flex flex-col items-center justify-center">
+        <div className="relative bg-[#d9d3cf] text-black p-6 rounded-lg shadow-lg w-[100%] w-[100%] lg:w-[35%] h-[100%] lg:h-[95%]">
           <form onSubmit={handleSubmit} className="bg-transparent py-6 px-12 lg:px-0 mx-0 rounded-md">
             <div className="text-center text-3xl mb-6">Event Details</div>
 
             <div className="mb-4">
-              <label className="block border-black text-lg font-medium mb-2">Event Type</label>
-              <select name="partyType" className="w-full px-3 py-2 rounded-md bg-white text-black" value={eventData.partyType} onChange={handleChange} required>
+              <label className="block text-lg font-medium mb-2">Event Type</label>
+              <select name="partyType" className="w-full px-3 py-2 rounded-md bg-gray-200 text-black" value={eventData.partyType} onChange={handleChange} required>
                 <option value="">Select a event type</option>
                 {partyTypes.map((type, index) => (
                   <option key={index} value={type}>{type}</option>
@@ -82,12 +82,12 @@ const EventDetailsPage = () => {
 
             <div className="mb-4">
               <label className="block text-lg font-medium mb-2">Email</label>
-              <input type="email" name="email" className="w-full px-3 py-2 rounded-md bg-white text-black" value={eventData.email} onChange={handleChange} required />
+              <input type="email" name="email" className="w-full px-3 py-2 rounded-md bg-gray-200 text-black" value={eventData.email} onChange={handleChange} required />
             </div>
 
             <div className="mb-4">
               <label className="block text-lg font-medium mb-2">Phone Number</label>
-              <input type="tel" name="phone" className="w-full px-3 py-2 rounded-md bg-white text-black" value={eventData.phone} onChange={handleChange} required />
+              <input type="tel" name="phone" className="w-full px-3 py-2 rounded-md bg-gray-200 text-black" value={eventData.phone} onChange={handleChange} required />
             </div>
 
             <div className="mb-4">
@@ -96,7 +96,7 @@ const EventDetailsPage = () => {
                 <div key={index} className="flex items-center gap-2 mb-2">
                   <input
                     type="date"
-                    className="w-full px-3 py-2 rounded-md bg-white text-black"
+                    className="w-full px-3 py-2 rounded-md bg-gray-200 text-black"
                     value={date}
                     onChange={(e) => handleDateChange(index, e.target.value)}
                     required
@@ -109,12 +109,12 @@ const EventDetailsPage = () => {
 
             <div className="mb-4">
               <label className="block text-lg font-medium mb-2">Location</label>
-              <input type="text" name="location" className="w-full px-3 py-2 rounded-md bg-white text-black" value={eventData.location} onChange={handleChange} required />
+              <input type="text" name="location" className="w-full px-3 py-2 rounded-md bg-gray-200 text-black" value={eventData.location} onChange={handleChange} required />
             </div>
 
             <div className="mb-4">
               <label className="block text-lg font-medium mb-2">Allergies/Food Preferences</label>
-              <textarea name="additionalInfo" className="w-full px-3 py-2 rounded-md bg-white text-black" value={eventData.additionalInfo} onChange={handleChange} rows="3"></textarea>
+              <textarea name="additionalInfo" className="w-full px-3 py-2 rounded-md bg-gray-200 text-black" value={eventData.additionalInfo} onChange={handleChange} rows="3"></textarea>
             </div>
 
             <button type="submit">

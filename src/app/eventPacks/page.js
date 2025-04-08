@@ -28,32 +28,6 @@ const EventPacksPage = () => {
       description: 'Email us and ask for store and food truck options pack, use the subject line SweetTreats20. Please include a time and place for your event!',
       website: 'Email us at EventureEventPlanning@gmail.com',
     },
-    {
-      id: 4,
-      name: 'SweetTreats20',
-      image: '/sweet-treats.jpg',
-      reviews: 'Dessert for 20 people from a restaurant or food truck of your choosing, tables(2) chairs(20)',
-      description: 'Email us and ask for store and food truck options pack, use the subject line SweetTreats20. Please include a time and place for your event!',
-      website: 'Email us at EventureEventPlanning@gmail.com',
-    },
-    {
-      id: 5,
-      name: 'SweetTreats20',
-      image: '/sweet-treats.jpg',
-      reviews: 'Dessert for 20 people from a restaurant or food truck of your choosing, tables(2) chairs(20)',
-      description: 'Email us and ask for store and food truck options pack, use the subject line SweetTreats20. Please include a time and place for your event!',
-      website: 'Email us at EventureEventPlanning@gmail.com',
-      
-    },
-    {
-      id: 6,
-      name: 'SweetTreats20',
-      image: '/sweet-treats.jpg',
-      reviews: 'Dessert for 20 people from a restaurant or food truck of your choosing, tables(2) chairs(20)',
-      description: 'Email us and ask for store and food truck options pack, use the subject line SweetTreats20. Please include a time and place for your event!',
-      website: 'Email us at EventureEventPlanning@gmail.com',
-      
-    }
   ];
 
   return (
@@ -65,7 +39,7 @@ const EventPacksPage = () => {
           {eventPacks.map((eventPack) => (
             <div
               key={eventPack.id}
-              className="bg-white border-4 border-black rounded-lg shadow-lg overflow-hidden"
+              className="bg-[#a8d2e3] border-4 border-black rounded-lg shadow-lg overflow-hidden"
             >
               <img
                 src={eventPack.image}
