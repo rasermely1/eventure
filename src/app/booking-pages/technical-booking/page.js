@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
 import emailjs from '@emailjs/browser';
 
-const EventOptionsPage = () => {
+const EventOptionsClient = () => {
 
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -153,4 +153,4 @@ const EventOptionsPage = () => {
   );
 };
 
-export default EventOptionsPage;
+export default EventOptionsClient;
