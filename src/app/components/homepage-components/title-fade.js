@@ -12,7 +12,7 @@ const TitleFade = () => {
       viewport={{ once: true }}
       className="relative grid sm:grid-cols-2 row-span-4"
     >
-        <Link href="https://forms.gle/8ozutzrChcuUvNrZA" className="absolute inset-0 z-20 content-center text-center px-4 sm:px-28">
+        <Link href="/booking-pages/details-booking" className="absolute inset-0 z-20 content-center text-center px-4 sm:px-28">
             <div className="font-sans hover:scale-125 cursor-pointer font-thin text-white hover:text-blue-400 text-4xl sm:text-6xl">
               <div>Plan Your Event Today</div>
               <div className="text-2xl">Everything You Need For Every Event</div>
