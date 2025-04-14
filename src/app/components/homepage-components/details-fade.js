@@ -15,19 +15,14 @@ const DetailsFade = () => {
           <div className="row-span-1 text-xl font-sans font-thin pt-8">DETAILS</div>
           <div className="row-span-1 text-3xl font-sans font-thin pb-4">HOW WE WILL COLLABORATE</div>
           <div className="row-span-2 sm:text-xl font-sans font-thin">
-            Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. 
-            Curabitur vulputate odio luctus, 
-            convallis erat eget, vulputate dolor.
-            Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit.
+            Planning with Eventure is simple and seamless. 
+            Share your event needs, preferences, and budget, 
+            and we’ll match you with top-rated vendors.
           </div>
           <div className="row-span-1 text-3xl font-sans font-thin">Project Scope</div>
           <div className="row-span-2 sm:text-xl font-sans font-thin">
-            Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. 
-            Curabitur vulputate odio luctus, 
-            convallis erat eget, vulputate dolor.
+            We handle full-service event planning:
+            Whether it’s a small gathering or a large-scale event, we’ve got everything covered.
           </div>
         </div>
 

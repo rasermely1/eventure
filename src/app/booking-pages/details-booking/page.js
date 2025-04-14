@@ -44,7 +44,7 @@ const EventDetailsPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+    var alertSound = document.getElementById("myAlertSound");
     try {
       const result = await emailjs.send(
         'service_585lw97',
@@ -62,6 +62,7 @@ const EventDetailsPage = () => {
       alert("Event details sent successfully!");
   
       console.log('Email successfully sent with data : ' + eventData, result.text);
+      alertSound.play();
       router.push(`/booking-pages/technical-booking?email=${encodeURIComponent(eventData.email)}`);
 
     } catch (error) {
@@ -75,10 +76,10 @@ const EventDetailsPage = () => {
   };
 
   return (
-    <div className="font-sans font-light grid grid-rows-8 h-full min-h-screen w-full transition-all duration-1000 bg-cover bg-center z-0">
+    <div className="font-sans font-light grid grid-rows-7 lg:grid-rows-8 h-full min-h-screen w-full transition-all duration-1000 bg-cover bg-center z-0">
       <Header />
-      <div className="flex flex-col row-span-6 items-center justify-center">
-        <div className="relative bg-[#d9d3cf] text-black p-6 rounded-lg shadow-lg lg:w-[35%] h-[100%] lg:h-[95%]">
+      <div className="flex flex-col row-span-6 lg:row-span-7 items-center justify-center">
+        <div className="relative bg-[#d9d3cf] text-black p-6 lg:rounded-lg shadow-lg w-[100%] lg:w-[35%] h-[100%] lg:h-[80%]">
           <form onSubmit={handleSubmit} className="bg-transparent py-6 px-12 lg:px-0 mx-0 rounded-md">
             <div className="text-center text-3xl mb-6">Event Details</div>
 
@@ -120,18 +121,25 @@ const EventDetailsPage = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-lg font-medium mb-2">Location</label>
+              <label className="block text-lg font-thin mb-2">Location</label>
               <input type="text" name="location" className="w-full px-3 py-2 rounded-md bg-gray-200 text-black" value={eventData.location} onChange={handleChange} required />
             </div>
 
             <div className="mb-4">
-              <label className="block text-lg font-medium mb-2">Allergies/Food Preferences</label>
+              <label className="block text-lg font-thin mb-2">Allergies/Food Preferences</label>
               <textarea name="additionalInfo" className="w-full px-3 py-2 rounded-md bg-gray-200 text-black" value={eventData.additionalInfo} onChange={handleChange} rows="3"></textarea>
             </div>
 
             <button type="submit">
               <div className="absolute bottom-[-20px] mb-9 left-1/2 transform -translate-x-1/2">
+                <audio className="hidden" id="myAlertSound" src="/alert-sound.mp3" controls></audio>
                 <div
+                  onClick={() => {
+                    const alertSound = document.getElementById("myAlertSound");
+                    if (alertSound) {
+                      alertSound.play().catch((err) => console.error("Sound play error:", err));
+                    }
+                  }}
                   className="w-12 h-12 bg-black hover:bg-[#5e8db8] text-white flex items-center justify-center rounded-full shadow-lg text-lg"
                 >
                   →

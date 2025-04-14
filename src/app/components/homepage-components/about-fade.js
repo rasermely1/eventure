@@ -22,9 +22,9 @@ const AboutFade = () => {
 
         <div className="col-span-1 grid grid-rows-2 items-center">
           <div className="row-span-1">
-            <div className="font-sans font-light lg:text-xl px-2">About The Team</div>
+            <div className="font-sans font-light lg:text-2xl pb-3 px-2">About The Team</div>
             <div className="font-sans font-thin lg:text-xl p-2">
-              nEventure, founded in 2023 by St. Charles North High School students in the INCubator entrepreneurship class, aims to simplify event planning. After winning first place at Pitch Night, the team gained confidence to bring their vision to life. Now, they are focused on growing Eventure into an all-in-one platform for seamless event planning.
+              Eventure, founded in 2023 by St. Charles North High School students in the INCubator entrepreneurship class, aims to simplify event planning. After winning first place at Pitch Night, the team gained confidence to bring their vision to life. Now, they are focused on growing Eventure into an all-in-one platform for seamless event planning.
             </div>
           </div>
           <div className="row-span-1 hidden xl:block">

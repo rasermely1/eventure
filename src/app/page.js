@@ -14,9 +14,9 @@ export default function Home() {
           <Header></Header>
           
           <TitleFade></TitleFade>
-
+          
           <IdentityFade></IdentityFade>
-
+          
           <DetailsFade></DetailsFade>
       </div>
 
