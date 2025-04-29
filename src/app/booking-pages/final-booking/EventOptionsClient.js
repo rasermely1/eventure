@@ -11,7 +11,13 @@ const EventOptionsClient = () => {
 
   const router = useRouter();
   const searchParams = useSearchParams();
-  const email = searchParams.get('email');
+
+  const partyType = searchParams.get("partyType");
+  const email = searchParams.get("email");
+  const phone = searchParams.get("phone");
+  const dates = searchParams.get("dates");
+  const location = searchParams.get("location");
+  const additionalInfo = searchParams.get("additionalInfo");  
 
   console.log("Received email:", email);
 
@@ -66,12 +72,17 @@ const EventOptionsClient = () => {
         'service_585lw97',
         'template_uy591fl',
         {
+          partyType: partyType,
           email: email,
+          phone: phone,
+          dates: dates,
+          location: location,
+          additionalInfo: additionalInfo,
           catering: eventData.catering,
           desserts: eventData.desserts,
           music: eventData.music,
           tables: eventData.tables,
-          tents: eventData.tents,
+          tents: eventData.tents
         },
         'm3orrz4RnaC-nq3Kq'
       );

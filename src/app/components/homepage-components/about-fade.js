@@ -13,10 +13,10 @@ const AboutFade = () => {
     >
         <div className="col-span-1 grid grid-rows-2">
           <div className="row-span-1 flex justify-center items-center">
-            <img src="/cali.png" alt="Team Picture" className="row-span-1 h-96 w-96"></img>
+            <img src="/team.svg" alt="Team Picture" className="row-span-1 h-96 w-96"></img>
           </div>
           <div className="row-span-1 flex justify-center items-center">
-            <img src="/cali.png" alt="Team Picture" className="row-span-1 h-96 w-96"></img>
+            <img src="/individual.svg" alt="Individuals Picture" className="row-span-1 h-120 w-120"></img>
           </div>
         </div>
 

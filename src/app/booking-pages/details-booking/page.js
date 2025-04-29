@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import '../../globals.css';
 import Header from "@/app/components/header";
 import { useRouter } from 'next/navigation';
-import emailjs from '@emailjs/browser';
 
 const EventDetailsPage = () => {
   const router = useRouter();
@@ -42,32 +41,25 @@ const EventDetailsPage = () => {
     setEventData((prev) => ({ ...prev, dates: newDates }));
   };
 
+  const params = new URLSearchParams({
+    partyType: eventData.partyType,
+    email: eventData.email,
+    phone: eventData.phone,
+    dates: eventData.dates,
+    location: eventData.location,
+    additionalInfo: eventData.additionalInfo
+  });
+    
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     var alertSound = document.getElementById("myAlertSound");
-    try {
-      const result = await emailjs.send(
-        'service_585lw97',
-        'template_ur1s3or',
-        {
-          partyType: eventData.partyType,
-          email: eventData.email,
-          phone: eventData.phone,
-          dates: eventData.dates.join(', '),  // Convert array to string
-          location: eventData.location,
-          additionalInfo: eventData.additionalInfo
-        },
-        'm3orrz4RnaC-nq3Kq'
-      );      
-      alert("Event details sent successfully!");
-  
-      console.log('Email successfully sent with data : ' + eventData, result.text);
+    try {     
       alertSound.play();
-      router.push(`/booking-pages/technical-booking?email=${encodeURIComponent(eventData.email)}`);
-
+      router.push(`/booking-pages/final-booking?${params.toString()}`);
     } catch (error) {
       if (error?.text) {
-        console.error('EmailJS Error Text:', error.text);
+        console.error('push error:', error.text);
       } else {
         console.error('Full error object:', error);
       }
